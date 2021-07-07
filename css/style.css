@@ -1,0 +1,40 @@
+	* { margin:0;  padding:0; }
+	body { width:100%; min-height:100vh;  background:#fff; font-family: 'Noto Sans KR', 'notokr-regular'; }
+	.wrap { width:100%; box-sizing:border-box; padding: 20px;}
+	.bar-chart { display: inline-block; *display: inline; zoom:1; margin-right: 10px; background-color: #92b9e0; } 
+	.title { text-align: center; color:#111; font-size: 36px; letter-spacing: -1px; opacity: 0.9; margin: 10px auto; font-weight: 100; }
+	.subtitle { text-align: center; color:#111; font-size: 20px; letter-spacing: -1px; opacity: 0.7; margin: 10px auto; font-weight: 600; }
+.chart-area { width: 800px; margin: 40px auto; position: relative;}
+	.chart-area #CHART { display:block; margin: 0 auto; overflow: visible;}
+	
+	#CHART .axis .domain {stroke-dasharray: 2; fill: none;stroke: #969696; shape-rendering: crispEdges;stroke-opacity:0;}
+	#CHART .axis .tick text { font-size: 12px; fill: #111; fill-opacity: 0.5; }
+	.chart-caption { margin-top: 60px; text-align: center; color:#fff; font-size: 14px; opacity:0.5; }
+
+	.plot { stroke: #fff; stroke-width: 1px;}
+	.plot-cont { fill-opacity:0.1; stroke: 1px; stroke-dasharray: 3; stroke-dashoffset: 3;stroke:#111;  stroke-opacity: 0.2;}
+	.plot-start { stroke: #fff; stroke-width: 1px; fill-opacity:0.4; stroke-opacity: 0.2;}
+	.plot-now { stroke: #fff; stroke-width: 2px; fill-opacity:0.8; stroke-opacity: 1;}
+
+	.tooltip {position: absolute; background:#fff; border: 1px solid #111; text-align: left; padding:10px;  z-index: 2; border-radius: 7px;  font-family: 'Noto Sans KR', 'notokr-regular', 'Apple SD Gothic Neo','맑은 고딕'; width: 150px; opacity:0; display:none;} 
+	.tooltip p {font-size:13px; line-height:1.3; font-weight:400;color:#111; margin: 0; }
+	.tooltip .name { font-weight:bold;}
+
+
+.tooltip{ border:none; position: relative; margin-top: 100px;  }
+.plot-line { /* stroke: #111; */ stroke-width: 1;  }
+.plot-line-1 { stroke-width:0.5;  stroke-opacity: 0.5;}
+.plot-line-2 { stroke-width: 1.5; stroke-opacity:1;}
+.plot-line-3 { stroke-width: 2; stroke-opacity:1;}
+.label {  font-size: 12px;font-weight: bold; color:#555;  stroke: white; stroke-width: 1.5px; opacity:0.6; paint-order: stroke fill;  text-anchor: middle; }
+.label-name { opacity:0;}
+
+/*
+.plot-g {opacity:0.2; }
+.plot-g-double { opacity:1;}
+*/
+.plot-g-double circle { stroke-width: 1.5; stroke-opacity:1; stroke: #ca0d00;} 
+.plot-g-double .label-name { opacity:0.8;}
+
+.btn-holder { position:fixed; top: 20px; width: 300px; left: 30px;}
+.btn-holder > div{cursor:pointer; box-sizing:border-box; padding: 10px; border: 1px solid #111; width: 200px; background:#fff;}
